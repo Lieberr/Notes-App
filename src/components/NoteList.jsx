@@ -14,7 +14,7 @@ const NoteList = ({ notes, deleteNote }) => {
               note.priority === "high"
                 ? "4px solid red"
                 : note.priority === "medium"
-                ? "4px solid orange"
+                ? "4px solid #df8429ff"
                 : "4px solid green",
           }}
         >

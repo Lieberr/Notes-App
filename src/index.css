@@ -185,7 +185,7 @@ body{
     
 }
 
-.btn:hover{
+.btn-delete:hover{
     color: rgb(169, 0, 0);
 }
 .note-header {
