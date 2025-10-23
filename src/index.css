@@ -1,0 +1,196 @@
+/*@import 'tailwindcss' */
+
+
+body{
+  background: #5d038f;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0; 
+}
+
+.container{
+  background-color: white;
+  border-radius: 12px; 
+  padding: 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); 
+  margin: 0 10px; 
+  margin-top: 50px;
+  width: 100%;
+  max-width: 500px; 
+}
+
+.notes{
+  text-align: center;
+  font-size: 2em;
+  color: #4b0082; 
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eeeeee; 
+  font-weight: 600;
+}
+
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inputs {
+    width: 100%;
+    margin-bottom: 18px; 
+}
+
+.inputs label {
+    font-size: 0.95em;
+    color: #444444; 
+    margin-bottom: 6px;
+    font-weight: 500;
+    display: block; 
+}
+
+.inputs input[type="text"],
+.inputs select,
+.inputs textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dddddd; 
+    border-radius: 6px;
+    font-size: 1em;
+    color: #333333;
+    box-sizing: border-box; 
+    transition: border-color 0.3s ease;
+}
+
+
+.inputs input[type="text"]:focus,
+.inputs select:focus,
+.inputs textarea:focus {
+    border-color: #8a2be2; 
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.2); 
+}
+
+.inputs textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    
+    background-color: #8a2be2; 
+    color: white;
+    font-size: 1.1em;
+    font-weight: 600;
+    
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.submit-button:hover {
+    background-color: #6a0dad; 
+}
+
+.submit-button:active {
+    transform: scale(0.99); 
+}
+
+.shownotes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px;
+    justify-content: center;
+}
+
+.no-notes {
+    text-align: center;
+    color: #777;
+    font-size: 1rem;
+    margin-top: 30px;
+}
+
+.note {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    width: 350px;
+    height: 160px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+
+
+}
+
+
+.note:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.category,
+.priority {
+    font-size: 0.76rem;
+    color: #666;
+    margin-bottom: 5px;
+    padding: -9px;
+}
+
+.description {
+    font-size: 0.95rem;
+    color: #444;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.btn{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid gray;
+    color: rgb(94, 0, 94);
+    border-radius: 7px;
+    padding: 10px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+.btn:hover{
+    background-color: #a672d7;
+}
+
+.btn-delete{
+    border: none;
+    background-color: white;
+    color: red;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+.btn:hover{
+    color: rgb(169, 0, 0);
+}
+.note-header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 5px; 
+}
